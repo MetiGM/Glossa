@@ -7,7 +7,7 @@ type Props = {
 
 const LandingLayout = ( {children}: Props) => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-neutral-100">
         <Header />
        <main className="flex flex-1 flex-col items-center justify-center">{children}</main> 
        <Footer />

@@ -17,22 +17,22 @@ export default function Home() {
       <div className="relative w-[240px] h-[240px] lg:w-[424px] lg:h-[424px] mb-8 lg:mb-0">
         <Image src="/hero.svg" alt="Hero" fill />
       </div>
-      <div className="flex flex-col items-center gap-y-8">
+      <div className="flex flex-col items-center gap-y-8 max-w-[330px] w-full">
         <h1 className="text-xl lg:text-3xl font-bold text-neutral-600 max-w-[480px] text-center">
           Learn, practice, and master new languages with Glossa.
         </h1>
-        <div>
+        <div className="flex flex-col items-center gap-y-3">
           <ClerkLoading>
             <Loader className="h-5 w-5 text-muted-foreground animate-spin" />
           </ClerkLoading>
           <ClerkLoaded>
             <SignedOut>
               <SignUpButton mode="modal">
-                <div className="mb-4">
+                
                   <Button size="lg" variant="secondary" className="w-full">
                     Get Started
                   </Button>
-                </div>
+                
               </SignUpButton>
               <SignInButton mode="modal">
                 <Button size="lg" variant="primaryOutline" className="w-full">
