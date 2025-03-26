@@ -16,20 +16,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: 'npm'  # Change to 'yarn' if you're using Yarn
-
       - name: Install dependencies
-        run: npm install  # or yarn install
+        run: npm install
+        working-directory: Glossa
 
       - name: Run lint
-        run: npm run lint  # Skip if you don’t have linting setup
+        run: npm run lint
+        working-directory: Glossa
 
       - name: Run tests
-        run: npm test  # Skip if you don’t have tests yet
+        run: npm test
+        working-directory: Glossa
 
       - name: Build Next.js app
         run: npm run build
+        working-directory: Glossa
