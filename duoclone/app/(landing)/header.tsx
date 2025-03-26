@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ClerkLoaded, ClerkLoading, SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs"
-import { Ghost, Loader } from "lucide-react"
+import { Loader } from "lucide-react"
 import Image from "next/image"
 
 
@@ -10,7 +10,7 @@ export const Header = ( ) => {
             <div className="lg:max-w-screen-lg mx-auto flex items-center justify-between h-full">
                 <div className="pt-8 pl-4 pb-7 flex items-center gap-x-3">
                     <Image src="/mascot.svg" width={40} height={40} alt='Mascot' />
-                    <h1 className="text-2xl font-extrabold text-green-600 tracking-wide">Glossa</h1>
+                    <h1 className="text-2xl font-extrabold text-green-500 tracking-wide">Glossa</h1>
                 </div>
                 <ClerkLoading>
                     <Loader className="h-5 w-5 text-muted-foreground animate-spin" />
